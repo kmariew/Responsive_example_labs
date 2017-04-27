@@ -1,0 +1,2 @@
+# Responsive_example_labs
+Responsive website_JavaScript aspects
