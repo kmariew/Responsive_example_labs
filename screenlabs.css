@@ -1,0 +1,173 @@
+
+
+body {
+  background-color: #fffef7;
+  background-image: url("Images/7131widefade.gif");
+  background-size: cover;
+  background-position: top center;
+  color: #00303f;
+  font-family: "robotocondensed-light-webfont", georgia, serif;
+}
+
+@font-face {
+  font-family: "NEORD";
+  src: url("Font/NEORD.ttf");
+}
+
+@font-face {
+  font-family: "robotocondensed-light-webfont";
+  src: url("Font/robotocondensed-light-webfont.ttf");
+}
+
+p.photo {
+  color: #2A2B2A;
+  text-align: center;
+}
+
+p#photo_intro {
+  text-align: center;
+}
+
+.gallery {
+  width: 1090px;
+  height: 500px;
+  margin: 30px auto;
+  display: block;
+}
+
+div.gallery::after{
+  content: none;
+  display: block;
+  height: 0;
+  width: 0;
+  clear: both;
+}
+
+.img {
+  width: 302px;
+  float: left;
+  margin: 30px;
+  height: 270px;
+}
+
+figure img {
+  width: 300px;
+  height: 250px;
+  background-color: #cae4db;
+  padding: 9px;
+  text-align: center;
+}
+
+#photos {
+  display: block;
+}
+
+p.photo {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+nav {
+  display: block;
+  clear: both;
+}
+
+#menu,
+.footer,
+ul {
+  float: none;
+  display: block;
+}
+
+h1,
+h2 {
+  color: #00303f;
+}
+
+h1 {
+  color: #00303f;
+  font-family: NEORD, Georgia, serif;
+  font-size: 3em;
+
+}
+
+h2 {
+  background-color: #cae4db;
+  text-align: left;
+  padding: 5px;
+  width: 75%;
+  margin-top: -20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  box-shadow: 6px 6px 9px 0px rgba(86, 116, 110, 1);
+}
+
+h1 {
+  text-align: center;
+}
+
+
+section {
+  background-color: rgba(122, 157, 150, .95);
+  margin: 40px auto 40px auto;
+  padding: 5px 15px 5px 15px;
+  border-radius: 2px;
+  text-align: justify;
+  width: 75%;
+}
+
+p::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 1;
+}
+
+li a {
+  color: #dcae1d;
+  text-decoration: none;
+}
+
+li a:hover {
+  font-weight: bold;
+  color: #00303f;
+  font-size: 1.15em;
+}
+
+
+li {
+  display: inline;
+  margin: 15px;
+  text-align: center;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    background-color: #fffef7;
+}
+
+nav li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.footer {
+  color: #dcae1d;
+  text-align: center;
+  font-size: .8em;
+}
+
+a#cite{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #dcae1d;
+}
+
+a#cite:hover{
+  font-weight: bold;
+  color: #00303f;
+}

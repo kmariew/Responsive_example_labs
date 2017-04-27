@@ -1,0 +1,459 @@
+/********************************************
+	Tag Resets
+********************************************/
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+/********************************************
+	Normalize CSS
+	http://necolas.github.com/normalize.css/
+********************************************/
+
+html {
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+	display: block;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+input,
+textarea,
+button,
+select {
+	margin: 0;
+	font-size: 100%;
+	line-height: normal;
+	vertical-align: baseline;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+textarea {
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******************************************
+	Web Fonts
+****************************************** */
+
+@font-face {
+  font-family: "NEORD";
+  src: url("Font/NEORD.ttf");
+}
+
+@font-face {
+  font-family: "robotocondensed-light-webfont";
+  src: url("Font/robotocondensed-light-webfont.ttf");
+}
+
+/* ******************************************
+	Custom Styles
+****************************************** */
+
+body {
+  background-color: #fffef7;
+  background-image: url("Images/7131widefade.gif");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #00303f;
+  font-family: "robotocondensed-light-webfont", georgia, serif;
+}
+
+#content {
+  margin: 0 18px;
+  padding: 18px;
+}
+
+
+p.photo {
+  color: #2A2B2A;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+
+p#photo_intro {
+  text-align: center;
+}
+
+/*
+#gallery{
+
+  height: 500px;
+  margin: 30px auto;
+  display: block;
+
+} */
+
+/* Float Clearing http://nicolasgallagher.com/micro-clearfix-hack */
+
+.group:after{
+  display: table;
+  height: 0;
+  width: 0;
+  content: "";
+  clear: both;
+}
+
+.group{
+  *zoom: 1;
+}
+
+/* */
+
+figure  {
+
+  background-color: #cae4db;
+  padding: 9px;
+  text-align: center;
+
+}
+
+img {
+  max-width: 100%;
+  width: 300px;
+  height: 250px;
+    -webkit-transition: all .75s ease;
+}
+
+img:hover {
+  -webkit-transform:scale(1.15);
+  -webkit-transition: all .75s ease;
+}
+
+
+nav {
+  display: block;
+  clear: both;
+}
+
+#menu,
+.footer,
+ul {
+  float: none;
+  display: block;
+}
+
+p.footer {
+	color: black;
+}
+
+h1,
+h2 {
+  color: #00303f;
+}
+
+h1 {
+  color: #00303f;
+  font-family: NEORD, Georgia, serif;
+  font-size: 3em;
+
+}
+
+h2 {
+  background-color: #cae4db;
+  text-align: left;
+  padding: 5px;
+  width: 75%;
+  margin-top: -20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  box-shadow: 6px 6px 9px 0px rgba(86, 116, 110, 1);
+}
+
+h1 {
+  text-align: center;
+  animation-name: bounceInDown;
+  -webkit-animation-name: bounceInDown;
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+}
+
+/* Animation */
+
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+            transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+            transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+            transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+            transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0);
+  }
+
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+/* Animation */
+
+section {
+  background-color: rgba(122, 157, 150, .95);
+  margin: 40px auto 40px auto;
+  padding: 5px 15px 5px 15px;
+  border-radius: 2px;
+  text-align: justify;
+  width: 75%;
+}
+
+p::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 1;
+}
+
+li a {
+  color: #dcae1d;
+  text-decoration: none;
+}
+
+li a:hover {
+  font-weight: bold;
+  color: #00303f;
+  font-size: 1.15em;
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing-function: linear;
+  transition-delay: .1s;
+}
+
+
+li {
+  display: inline;
+  margin: 15px;
+  text-align: center;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    background-color: #fffef7;
+}
+
+nav li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.footer {
+  color: #dcae1d;
+  text-align: center;
+  font-size: .8em;
+}
+
+a#cite{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #dcae1d;
+}
+
+a#cite:hover{
+  font-weight: bold;
+  color: #00303f;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: .1s;
+
+}
+
+
+
+
+
+/* ******************************************
+		Media Queries for screen wider than 720px
+****************************************** */
+	@media screen and (min-width: 720px) {
+
+		#gallery article {
+			float:left;
+			width:33%;
+		}
+
+    /* Float Clearing http://nicolasgallagher.com/micro-clearfix-hack */
+
+    .group:after{
+      display: table;
+      height: 0;
+      width: 0;
+      content: "";
+      clear: both;
+    }
+
+    .group{
+      *zoom: 1;
+    }
+
+    /* */
+
+    img {
+      max-width: 100%;
+      width: 300px;
+      height: 250px;
+    }
+
+
+	}
